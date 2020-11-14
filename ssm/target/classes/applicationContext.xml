@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context.xsd
+           http://www.springframework.org/schema/aop
+           http://www.springframework.org/schema/aop/spring-aop.xsd
+           http://www.springframework.org/schema/tx
+           http://www.springframework.org/schema/tx/spring-tx.xsd">
+
+    <!-- 开启注解扫描，要扫描的是service和dao层的注解，要忽略web层注解，因为web层让SpringMVC框架 去管理 -->
+        <!-- 配置要忽略的注解 -->
+    <!--  这里有个巨坑，spring默认会先扫描当前这个配置文件，然后才是springmvc的配置文件  -->
+    <!--  service注解不能被mvc再次扫描会出现冲突  -->
+    <context:component-scan base-package="com.yjiewei">
+<!--        <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>-->
+    </context:component-scan>
+
+    <!--  spring整合mybatis框架  -->
+    <!--  配置连接池  -->
+    <bean id="datasource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+        <property name="driverClass" value="com.mysql.cj.jdbc.Driver"/>
+        <property name="jdbcUrl" value="jdbc:mysql:///ssm?serverTimezone=GMT"/>
+        <property name="user" value="root"/>
+        <property name="password" value="145792"/>
+    </bean>
+    <!--  配置sqlsessionfactory工厂 -->
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="datasource"/>
+    </bean>
+
+    <!--  配置accountdao接口所在包  -->
+    <bean id="mapperScanner" class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="basePackage" value="com.yjiewei.dao"/>
+    </bean>
+
+    <!--  配置spring 框架声明式事务管理  -->
+    <!--  配置事务管理器  -->
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="datasource"/>
+    </bean>
+
+    <!--  基于AspectJ 声明式事务XML配置方式  -->
+    <!--  配置事务通知  -->
+    <tx:advice id="txAdvice">
+        <tx:attributes>
+            <tx:method name="saveAccount" propagation="REQUIRED" isolation="DEFAULT"/>
+        </tx:attributes>
+    </tx:advice>
+    <!--  配置AOP增强 -->
+    <aop:config>
+        <aop:pointcut id="pt" expression="execution(* com.yjiewei.service..*.*(..))"/>
+        <aop:advisor advice-ref="txAdvice" pointcut-ref="pt"/>
+    </aop:config>
+
+<!--    <tx:annotation-driven proxy-target-class="true" transaction-manager="transactionManager"/>-->
+
+</beans>
