@@ -1,0 +1,1 @@
+## springboot整合使用rabbitmq以及常用API调用接口。

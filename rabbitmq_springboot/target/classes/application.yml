@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: yjiewei-springboot-rabbitmq # \u8FD9\u4E2A\u540D\u5B57\u76EE\u524D\u4E0D\u91CD\u8981\uFF0C\u5FAE\u670D\u52A1\u4E2D\u6BD4\u8F83\u91CD\u8981
+  rabbitmq:
+    host: 39.101.198.16
+    port: 5672
+    username: ems
+    password: 123
+    virtual-host: /ems

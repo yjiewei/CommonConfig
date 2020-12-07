@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4647293e-cf7d-4ce1-858e-32e79b2c1981" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="C:\Users\yangjiewei\Desktop\Java\maven\maven_repository" />
+        <option name="mavenHome" value="$USER_HOME$/Desktop/Java/maven/apache-maven-3.5.2" />
+        <option name="userSettingsFile" value="C:\Users\yangjiewei\Desktop\Java\maven\apache-maven-3.5.2\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1lH90hjDubUEdrGcOonlI3qkcoE" />
+  <component name="ProjectViewState">
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+  </component>
+  <component name="RunManager" selected="JUnit.RabbitmqTest.testTopic">
+    <configuration name="RabbitmqTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rabbitmq_springboot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yjiewei.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.yjiewei" />
+      <option name="MAIN_CLASS_NAME" value="com.yjiewei.RabbitmqTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RabbitmqTest.testFanout" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rabbitmq_springboot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yjiewei.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.yjiewei" />
+      <option name="MAIN_CLASS_NAME" value="com.yjiewei.RabbitmqTest" />
+      <option name="METHOD_NAME" value="testFanout" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RabbitmqTest.testRoute" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rabbitmq_springboot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yjiewei.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.yjiewei" />
+      <option name="MAIN_CLASS_NAME" value="com.yjiewei.RabbitmqTest" />
+      <option name="METHOD_NAME" value="testRoute" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RabbitmqTest.testTopic" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rabbitmq_springboot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yjiewei.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.yjiewei" />
+      <option name="MAIN_CLASS_NAME" value="com.yjiewei.RabbitmqTest" />
+      <option name="METHOD_NAME" value="testTopic" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RabbitmqTest.testWork" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rabbitmq_springboot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yjiewei.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.yjiewei" />
+      <option name="MAIN_CLASS_NAME" value="com.yjiewei.RabbitmqTest" />
+      <option name="METHOD_NAME" value="testWork" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RabbitmqSpringbootApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="rabbitmq_springboot" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yjiewei.RabbitmqSpringbootApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.RabbitmqTest.testTopic" />
+        <item itemvalue="JUnit.RabbitmqTest.testRoute" />
+        <item itemvalue="JUnit.RabbitmqTest.testFanout" />
+        <item itemvalue="JUnit.RabbitmqTest.testWork" />
+        <item itemvalue="JUnit.RabbitmqTest.test" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4647293e-cf7d-4ce1-858e-32e79b2c1981" name="Default Changelist" comment="" />
+      <created>1607242927653</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1607242927653</updated>
+      <workItem from="1607242932673" duration="9530000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1237" height="421" key="GridCell.Tab.0.bottom" timestamp="1607304181711">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="1237" height="421" key="GridCell.Tab.0.bottom/0.0.1280.689@0.0.1280.689" timestamp="1607304181711" />
+    <state width="1237" height="421" key="GridCell.Tab.0.center" timestamp="1607304181710">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="1237" height="421" key="GridCell.Tab.0.center/0.0.1280.689@0.0.1280.689" timestamp="1607304181710" />
+    <state width="1237" height="421" key="GridCell.Tab.0.left" timestamp="1607304181710">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="1237" height="421" key="GridCell.Tab.0.left/0.0.1280.689@0.0.1280.689" timestamp="1607304181710" />
+    <state width="1237" height="421" key="GridCell.Tab.0.right" timestamp="1607304181710">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="1237" height="421" key="GridCell.Tab.0.right/0.0.1280.689@0.0.1280.689" timestamp="1607304181710" />
+  </component>
+</project>
